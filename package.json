@@ -1,0 +1,20 @@
+{
+  "name": "sandbox",
+  "version": "1.0.0",
+  "description": "experiment with npm and grunt",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log('testing testing')"
+  },
+  "author": "miranda",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-postcss": "latest",
+    "autoprefixer": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest"
+  }
+}
