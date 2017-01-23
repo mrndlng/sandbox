@@ -1,3 +1,4 @@
+// Load Grunt
 module.exports = function(grunt) {
   grunt.initConfig({ 
   	 pkg: grunt.file.readJSON('package.json'),
@@ -32,7 +33,7 @@ module.exports = function(grunt) {
 		cssmin: {
 			target: {
 				files: [{
-					expand: true.
+					expand: true,
 					cwd: 'css',
 					src: ['*.css', '!*.min.css'],
 					dest: 'css',
@@ -65,5 +66,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Register Grunt tasks
-  grunt.registerTask('dev', ['watch', 'livereload']);
+  grunt.registerTask('default', ['watch']);
 };
