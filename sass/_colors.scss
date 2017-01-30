@@ -1,0 +1,23 @@
+/*********************
+* Color variables
+*********************/
+
+$black: #000;
+$grey: #cecece;
+$white: #fff;
+$blue: #ff9538;
+$light-green: #ccffe6;
+$red: #ff0000;
+$light-yellow: #ffffcc;
+$yellow: #ffff00;
+$light-blue: #b1dee2;
+$green: #57ab1a;
+
+// used in normalize typography
+$background: $white;
+$text-color: $black;
+$link-color: skyblue;
+$link-hover: darken($link-color, 9%);
+$base-border-color: #ddd;
+
+

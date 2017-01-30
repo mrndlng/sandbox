@@ -2,6 +2,7 @@
 module.exports = function(grunt) {
   grunt.initConfig({ 
   	 pkg: grunt.file.readJSON('package.json'),
+  
   // Tasks
 		sass: {
 			dist: {
@@ -17,6 +18,7 @@ module.exports = function(grunt) {
 			}]
 			}
 		},
+		
 		postcss: {
 			options: {
 				map: false,
@@ -30,6 +32,7 @@ module.exports = function(grunt) {
 				src: 'css/style.css'
 			}
 		},
+		
 		cssmin: {
 			target: {
 				files: [{
@@ -41,12 +44,14 @@ module.exports = function(grunt) {
 		}]
 			}
 		},
+		
 		uglify: {
 			build: {
 				src: ['src/*.js'],
 				dest: 'js/script.min.js'
 			}
 		},
+		
 		watch: {
 			css: {
 				files: '**/*.scss',
@@ -58,13 +63,19 @@ module.exports = function(grunt) {
 			}
 		}
 	});
+	// 3. Where we tell Grunt what plugins to use
 	// Load Grunt plugins
+
+	// Sass
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-postcss');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
+
+	// JS
 	grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-	// Register Grunt tasks
+	// Register Grunt tasks 
+	// Where we tell Grunt what to do when we type "grunt" into the terminal.
   grunt.registerTask('default', ['watch']);
 };

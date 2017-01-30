@@ -4,6 +4,10 @@
     }
 
 
+  // Register Grunt tasks
+  grunt.registerTask('dev', ['watch', 'livereload']);
+};
+
 
 
 cd

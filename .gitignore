@@ -1,4 +1,5 @@
 ## Ignore Mac OS Stuff
 .DS_Store
+.sass-cache
 notes
 node_modules
