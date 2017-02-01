@@ -13,7 +13,7 @@
     "grunt": "latest",
     "grunt-contrib-cssmin": "latest",
     "grunt-contrib-sass": "latest",
-    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "latest",
     "grunt-postcss": "latest",
     "jshint": "^2.9.4"
